@@ -13,7 +13,7 @@ The model of this project is responsible for the set of operations that are goin
 An interface, IModel, has been established, encapsulating method signatures intended for client utilization.
 
 
-The Image class functions as an abstract implementation of this interface. It serves as the base for two distinct concrete subclasses, RGBImage and GrayscaleImage, both extending the functionality of the Image class. These subclasses are responsible for all the image manipulations within the application.
+**The Image class functions as an abstract implementation of this interface. It serves as the base for two distinct concrete subclasses, RGBImage and GrayscaleImage, both extending the functionality of the Image class.** These subclasses are responsible for all the image manipulations within the application.
 
 
 ImageUtil class is also implemented in the model to load the images in the application for the required processing. It also facilitates saving an image after the required processing.
@@ -29,7 +29,7 @@ There were no changes in the model design as no new operations were added.
 
  
 ## Controller
-The controller acts as a bridge between the model and the view. Command line design pattern is implemented in the controller design where the relevant command is executed as defined in the predefined command map. Each command has been represented as a separate class of its own that will check the validity of the command and will finally call the command’s implementation in the model.
+The controller acts as a bridge between the model and the view. **Command line design pattern is implemented in the controller design where the relevant command is executed as defined in the predefined command map.** Each command has been represented as a separate class of its own that will check the validity of the command and will finally call the command’s implementation in the model.
 
 ### Update for Assignment 5
 New commands were added for compression, creating histograms, color correction, and level adjustment in the command map to perform the required operations. The new commands then call their respective implementation in the model to execute the logic. There were no significant changes in the controller design as 4 new commands were added to the already existing command map.
@@ -47,8 +47,8 @@ The view helps in rendering the operations and displaying them to the user. The 
 There were no significant changes in the view as the new operations don't require any new view component.
 
 ### Updates for Assignment 6
-A new GUIView interface is designed to get an interactive Graphical user interface-based system for this application. The interface is implemented using JFrameView concrete class.
-The design, look, and feel of the GUI are present in the constructor of JFrameView class. Java Swing is used to design the components of the interface. 
+**A new GUIView interface is designed to get an interactive Graphical user interface-based system for this application. The interface is implemented using JFrameView concrete class.
+The design, look, and feel of the GUI are present in the constructor of JFrameView class.** Java Swing is used to design the components of the interface. 
 
 Various operations such as flipping, burring, sharpening, converting to grayscale, converting to sepia, correcting colors, and adjusting levels are provided using components in the JFrameView. The user can perform these operations and check the preview of the image after these operations. The user can also preview the split view of the image so that the image before operation and after operation are compared at the same time. The histogram of the current Image is also displayed in the bottom left corner. 
 
