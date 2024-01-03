@@ -1,8 +1,12 @@
 # Image Manipulation and Enhancement
+
+### GUI of the app
+![image](https://github.com/mishra-kunal1/Image-Processor/assets/99056351/07ef8eef-30ac-4eec-ae47-ffa5d56ed462)
+
  
 ### Programming Design
  
-The assignment necessitates implementing various image effects within an image processing application.  It has three components Model, View and Controller
+The assignment necessitates implementing various image effects within an image processing application.  It has three components Model, View, and Controller
  
 ## Model 
 The model of this project is responsible for the set of operations that are going to be performed on the image.
