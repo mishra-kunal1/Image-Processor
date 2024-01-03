@@ -1,0 +1,3 @@
+load test/controller/MockImage.png mock
+blur mock mock-blur
+sharpen mock-blur mock-sharpen
